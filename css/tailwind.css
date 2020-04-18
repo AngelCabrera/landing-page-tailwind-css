@@ -1,0 +1,53 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
+.alert-container {
+  @apply absolute right-4 bottom-4;
+}
+
+.alert {
+  @apply w-56 px-4 mt-2 py-2 text-black rounded border relative text-sm opacity-90;
+}
+
+.alert-default {
+  @apply bg-green-600 text-green-100;
+}
+
+.alert-danger {
+  @apply bg-red-600 text-red-100;
+}
+
+.alert-warning {
+  @apply bg-orange-600 text-orange-100;
+}
+
+.alert-info {
+  @apply bg-gray-600 text-gray-100;
+}
